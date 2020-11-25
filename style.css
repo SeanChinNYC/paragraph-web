@@ -19,6 +19,7 @@ html, button, input, select, textarea,
 
 .splash-section {
 	border-bottom: 2px solid #EBEBEB;
+	box-sizing: border-box;
 }
 
 .splash-section-content {
@@ -33,9 +34,13 @@ html, button, input, select, textarea,
 	justify-content: center;
 }
 
+.l-box.screenshots {
+	order: 1;
+}
+
 .splash-section.header .l-box {
 	min-height: auto;
-	padding: 30px 0;
+	padding: 10px 0;
 }
 
 
@@ -48,6 +53,10 @@ html, button, input, select, textarea,
 	line-height: 55px;
 }
 
+.splash-section-content h2, .splash-section-content p {
+	text-align: center;
+}
+
 h2 {
 	font-weight: 700;
 	font-size: 22px;
@@ -55,6 +64,7 @@ h2 {
 }
 
 p, a {
+	color: #333333;
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 24px;
@@ -68,6 +78,7 @@ p, a {
 	padding: 10px 20px;
 	border-radius: 30px;
 	border: 2px solid #333333;
+	margin-bottom: 15px;
 }
 
 .header .button:hover {
@@ -104,16 +115,34 @@ img[src*='@3x'] {
 		padding: 0;
 	}
 }
+@media screen and (min-width: 48em){ 
+	.splash-section-content h2, .splash-section-content p {
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 48em){
+	.splash-section.header .l-box {
+		padding: 30px 0;		
+	}
+}
+@media screen and (min-width: 48em){
+	.header .button {
+		margin-bottom: 0;
+	}
+}
 
 @media screen and (min-width: 48em) {
 	.splash-section:nth-child(even) .l-box.screenshots {
 		justify-content: flex-end;
+		order: initial;
 	}
 }
 
 @media screen and (min-width: 48em) {
 	.splash-section:nth-child(odd) .l-box.screenshots {
 		justify-content: flex-start;
+		order: initial;
 	}
 }
 
