@@ -27,9 +27,8 @@ html, button, input, select, textarea,
 }
 
 .splash-section .l-box {
-	padding: 0;
+	padding: 30px 30px 0 30px;
 	display: flex;
-	min-height: 350px;
 	align-items: center;
 	justify-content: center;
 }
@@ -39,12 +38,7 @@ html, button, input, select, textarea,
 	padding: 30px 0;
 }
 
-.splash-section.header .l-box.logo {
-	justify-content: flex-start;
-}
-.splash-section.header .l-box.header-button {
-	justify-content: flex-end;
-}
+
 
 
 /*Type*/
@@ -97,10 +91,42 @@ img[src*='@3x'] {
 	align-self: flex-end;
 }
 
-.splash-section:nth-child(even) .l-box.screenshots {
-	justify-content: flex-end;
+
+
+
+
+
+/*media queries*/
+
+@media screen and (min-width: 48em){ 
+	.splash-section .l-box {
+		min-height: 350px;
+		padding: 0;
+	}
 }
 
-.splash-section:nth-child(odd) .l-box.screenshots {
-	justify-content: flex-start;
+@media screen and (min-width: 48em) {
+	.splash-section:nth-child(even) .l-box.screenshots {
+		justify-content: flex-end;
+	}
 }
+
+@media screen and (min-width: 48em) {
+	.splash-section:nth-child(odd) .l-box.screenshots {
+		justify-content: flex-start;
+	}
+}
+
+
+@media screen and (min-width: 48em) {
+	.splash-section.header .l-box.logo {
+		justify-content: flex-start;
+	}
+}
+@media screen and (min-width: 48em){ 
+	.splash-section.header .l-box.header-button {
+	justify-content: flex-end;
+	}
+}
+
+
