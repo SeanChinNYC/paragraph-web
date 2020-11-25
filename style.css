@@ -1,0 +1,106 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+	font-family: 'Lora', serif;
+	color: #333333;
+}
+
+
+
+.content {
+	margin: 0 auto;
+}
+
+.pure-g > div {
+        box-sizing: border-box;
+    }
+    .l-box {
+        padding: 1em;
+    }
+
+.splash-section {
+	border-bottom: 2px solid #EBEBEB;
+}
+
+.splash-section-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.splash-section .l-box {
+	padding: 0;
+	display: flex;
+	min-height: 350px;
+	align-items: center;
+	justify-content: center;
+}
+
+.splash-section.header .l-box {
+	min-height: auto;
+	padding: 30px 0;
+}
+
+.splash-section.header .l-box.logo {
+	justify-content: flex-start;
+}
+.splash-section.header .l-box.header-button {
+	justify-content: flex-end;
+}
+
+
+/*Type*/
+.logotype {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 55px;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+p, a {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 24px;
+}
+
+/*buttons*/
+.header .button {
+	color: #333333;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 30px;
+	border: 2px solid #333333;
+}
+
+.header .button:hover {
+	background-color: #3333331a;
+}
+
+/*images*/
+
+img[src*='@2x'] {
+  zoom:50%;
+}
+img[src*='@3x'] {
+  zoom:33%;
+}
+
+.logo img {
+	margin: 0 10px 0 0;
+}
+
+.screenshots img {
+	align-self: flex-end;
+}
+
+.splash-section:nth-child(even) .l-box.screenshots {
+	justify-content: flex-end;
+}
+
+.splash-section:nth-child(odd) .l-box.screenshots {
+	justify-content: flex-start;
+}
